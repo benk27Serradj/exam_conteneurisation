@@ -37,6 +37,7 @@ def evaluate_method(method_name, file_path, X_original):
 
 
 def main():
+    print("Hello, this is the exam!")
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--method",
