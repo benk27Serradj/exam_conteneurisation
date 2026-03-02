@@ -63,8 +63,7 @@ for each method.
 You can edit your local scripts, notebooks, or CSV files without rebuilding the Docker image by mounting your project folder as a volume:
 
 ```bash
-docker run --rm -v $(pwd):/app dim-reduction
-docker run --rm -v $(pwd):/app dim-reduction python evaluate.py --method umap
+docker run -d -p 8080:5000 -v $(pwd)/evaluate.py:/app/evaluate.py dim-reduction
 ```
 
 ### 4. Develop collaboratively in the same environment (+2 pts)
